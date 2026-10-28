@@ -1,0 +1,22 @@
+# Example configuration for xteinkcli.
+# Copy this file to config.toml (excluded by .gitignore) or pass it with
+# --config. Do not store passwords here: they are not needed.
+#
+# The IP can be overridden with the XTEINK_IP environment variable or --ip.
+
+# X4 IP while File Transfer is active and the reader is on the same LAN.
+# Example: 192.168.1.50
+ip = "192.168.1.50"
+
+# Stock HTTP server port. Normally 80.
+port = 80
+
+# Timeout (seconds) for quick operations: status, list, mkdir, etc.
+timeout = 10.0
+
+# Timeout (seconds) for uploading or downloading a book. Large EPUB files can
+# take several minutes over the X4's Wi-Fi.
+upload_timeout = 600.0
+
+# BLE name prefix used by the stock reader.
+ble_name_prefix = "XTEPD_BLE_"
