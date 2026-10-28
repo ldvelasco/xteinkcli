@@ -1,0 +1,6 @@
+# Keep local-only and generated files out of `git archive` output.
+config.toml export-ignore
+.venv/ export-ignore
+.pytest_cache/ export-ignore
+src/xteink_agent.egg-info/ export-ignore
+**/__pycache__/ export-ignore

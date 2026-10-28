@@ -1,0 +1,28 @@
+# Python virtual environment and build artifacts
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Private configuration and secrets
+config.toml
+.env
+*.secret
+*.token
+
+# Local book downloads and temporary copies
+downloads/
+*.part
+*.tmp
+
+# Editors / system
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
