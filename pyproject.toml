@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xteink-agent"
+version = "0.1.0"
+description = "Local CLI to control an Xteink X4 reader running stock firmware"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "Xteink Agent" }]
+dependencies = [
+    "httpx>=0.27,<1",
+    "bleak>=0.22,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0.3,<10",
+]
+
+[project.scripts]
+xteinkcli = "xteinkcli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
